@@ -1,0 +1,28 @@
+p {
+    background-color: cornflowerblue;
+}
+
+/* Specificity rule*/
+/* Style in HTML file itself has higher priority than below cases 
+  But suppose some rule whcich is not mentioned in higher pripority rule but it i available 
+  in lower priority , that rule will get implement in higher priority also
+  --> in below case bg colour will be 'cyan, and font style will be italic
+  */
+
+div p{
+    background-color: crimson; /*middle*/
+}
+
+#content{
+    background-color: cyan; /*high*/
+}
+
+p{
+    background-color: darkgreen; /*low*/
+    font-style: italic;
+}
+
+/*Ineritance
+HTML --> BODY --> H1,H2,DIV,P,DIV-->P
+
+*/

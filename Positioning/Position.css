@@ -1,0 +1,36 @@
+body{
+    background-color: lightblue;
+}
+
+.Redbox{
+    background-color: red;
+  /*  position: fixed;*/
+    top: 100px;
+}
+
+.Bluebox{
+    background-color: royalblue;
+    
+    
+}
+h1{ 
+    color: darkblue;  
+}
+em{
+    color: midnightblue;
+    font-weight: bolder;
+}
+.contaier{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.Box{
+    width: 100px;
+    height:100px;
+    margin: 10px;
+}
+/* fixed - element will stay on position even if we will scroll window 
+  absolute - same as fixd except that element will move with scroll
+

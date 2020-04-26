@@ -1,0 +1,87 @@
+/*@import url(stylesheet2.css);*/ /*will import stylesheet2 rules too*/
+
+/* for multiple ine comment = Shift+alt+A
+for developer tool in chrome - ctrl + shift + C
+*/
+
+body { 
+    background-color:lightblue ; /* #cccc99,rgb(255,0,0)*/
+    background-image: url("nature.jpg");
+    
+}
+*{
+    color: black;
+}
+h1{
+    background-color: burlywood;
+}
+div{
+    background-color:lightslategray;
+}
+p{
+    font-size:larger;  /*28pt,1.5em,*/
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    width: 50%;
+
+}
+
+/*CSS Specs -- http://www.w3.org/Style/CSS/ , www.w3.org/TR/CSS21/propidx.html  */
+/*tyle rule>*/
+
+body {
+ background-color: aquamarine;
+ padding: 10px;
+}
+
+#Content{
+    background-color: brown;
+
+}
+.ExtraContent{
+    font-style: italic;
+}
+
+/* decendent seector*/
+div p{
+    background-color: #fff;
+}
+/*child selector*/
+div > p{
+    background-color: lightslategray;
+}
+ /*attribute selector*/
+ img[alt=spacer]{
+     padding:0px;
+ }
+
+ /*psudo class*/
+ a:visited{
+     color:black;
+ }
+
+
+ /* ------------------cascadingg and inheritance-----------*/
+/* CSS reset*/
+/* cascade style rules - default browser style rule,user style rule,author rule*/
+/*Specificity
+-- higher specifity number , more imp rule 
+-- three parts A,B,C
+    --> A - count of Id Selectors
+    --> B - count of class and attribute selector
+    --> C - count of type selector 
+
+    * --> a=0,b=0,c=0 -- > spec = 0 
+    LI --> a=1,b=0,c=1 --> spec  = 1
+    UL,LI --> a=0,b=0,c-=2 --> spec = 2
+    LI.red --> a=0,b=1,c=1 --> spec = 11
+    #content(id) --> a=1,b=0,c=0 --> 100*/
+
+/* CSS box model
+--> every tg like div,h1,p has box around it
+--> dv -- border,padding,margin,top,right,left,bottom
+
+*/
+
+
